@@ -1,5 +1,5 @@
 package com.ll.restapistudy.domain.member.member.service;
-
+import org.springframework.security.crypto.password.PasswordEncoder;
 import com.ll.restapistudy.domain.member.member.entity.Member;
 import com.ll.restapistudy.domain.member.member.repository.MemberRepository;
 import com.ll.restapistudy.global.raData.RsData;
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.time.LocalDateTime;
 import java.util.Optional;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Service
 @Transactional(readOnly = true)
