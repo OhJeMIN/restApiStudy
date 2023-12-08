@@ -44,4 +44,7 @@ public class ArticleService {
         return articleRepository.findAll();
     }
 
+    public List<Article> findAllByOrderByIdDesc() {
+        return articleRepository.findAllByOrderByIdDesc();
+    }
 }
